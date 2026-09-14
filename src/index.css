@@ -7,23 +7,44 @@ html {
 }
 
 body {
-  @apply antialiased text-gray-900;
+  @apply antialiased bg-paper text-ink font-sans;
+  font-feature-settings: 'ss01', 'ss02';
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-rise {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-moss-600;
+  }
 
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-moss-500 focus-visible:ring-offset-paper;
+  }
+
+  .btn-primary {
+    @apply btn bg-ink text-paper-soft hover:bg-ink-soft shadow-lift;
+  }
+
+  .btn-secondary {
+    @apply btn border border-ink/15 bg-transparent text-ink hover:border-ink/40 hover:bg-paper-deep;
+  }
+
+  .link-quiet {
+    @apply text-ink-muted transition-colors hover:text-ink;
+  }
 }

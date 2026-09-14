@@ -1,48 +1,75 @@
-import React from 'react';
-import { MessageSquare, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import { NAV_LINKS, START_ONBOARDING_HREF } from '../../config';
+import Wordmark from '../ui/Wordmark';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <MessageSquare className="h-8 w-8 text-blue-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">apptek.io</span>
-          </div>
-          
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="#services" className="text-gray-600 hover:text-blue-600">Services</a>
-            <a href="#demo" className="text-gray-600 hover:text-blue-600">Demo</a>
-            <a href="#case-studies" className="text-gray-600 hover:text-blue-600">Case Studies</a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600">Contact</a>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+        scrolled ? 'bg-paper/85 backdrop-blur-md border-b border-ink/10' : 'bg-transparent'
+      }`}
+    >
+      <div className="container-content">
+        <div className="flex items-center justify-between py-4">
+          <a href="#top" className="flex items-center" aria-label="APPTEK home">
+            <Wordmark />
+          </a>
+
+          <nav className="hidden items-center gap-8 md:flex">
+            {NAV_LINKS.map((link) => (
+              <a key={link.href} href={link.href} className="text-sm font-medium link-quiet">
+                {link.label}
+              </a>
+            ))}
           </nav>
 
-          {/* Mobile menu button */}
-          <button 
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          <div className="hidden md:block">
+            <a href={START_ONBOARDING_HREF} className="btn-primary">
+              Start onboarding
+            </a>
+          </div>
+
+          <button
+            className="md:hidden -mr-2 inline-flex h-10 w-10 items-center justify-center rounded-full text-ink"
+            onClick={() => setIsMenuOpen((v) => !v)}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-600" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-600" />
-            )}
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#services" className="block px-3 py-2 text-gray-600 hover:text-blue-600">Services</a>
-              <a href="#demo" className="block px-3 py-2 text-gray-600 hover:text-blue-600">Demo</a>
-              <a href="#case-studies" className="block px-3 py-2 text-gray-600 hover:text-blue-600">Case Studies</a>
-              <a href="#contact" className="block px-3 py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            <div className="mb-4 rounded-xl2 border border-ink/10 bg-paper-soft p-3 shadow-card">
+              {NAV_LINKS.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block rounded-lg px-3 py-3 text-base font-medium text-ink hover:bg-paper-deep"
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href={START_ONBOARDING_HREF}
+                onClick={() => setIsMenuOpen(false)}
+                className="btn-primary mt-2 w-full"
+              >
+                Start onboarding
+              </a>
             </div>
           </div>
         )}
