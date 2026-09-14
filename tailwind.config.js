@@ -1,42 +1,46 @@
 /** @type {import('tailwindcss').Config} */
+
+// Colors are driven by CSS variables (see src/index.css) so the whole site can
+// be re-themed via [data-theme] without touching component classes. Each var
+// holds space-separated RGB channels, enabling Tailwind's /<alpha-value> syntax.
+const v = (name) => `rgb(var(${name}) / <alpha-value>)`;
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        // Warm "paper" backgrounds — calm, premium, not stark white
         paper: {
-          DEFAULT: '#F7F4EC',
-          soft: '#FCFAF4',
-          deep: '#EFEADD',
+          DEFAULT: v('--c-paper'),
+          soft: v('--c-paper-soft'),
+          deep: v('--c-paper-deep'),
         },
-        // Deep forest ink — confident, calm, reads as "green week / go"
         ink: {
-          DEFAULT: '#14231C',
-          soft: '#26382F',
-          muted: '#55655C',
+          DEFAULT: v('--c-ink'),
+          soft: v('--c-ink-soft'),
+          muted: v('--c-ink-muted'),
         },
-        // Primary accent: calm evergreen
+        // Primary accent scale
         moss: {
-          50: '#EEF4EF',
-          100: '#D6E6D9',
-          200: '#AECCB4',
-          300: '#7FAE89',
-          400: '#548C62',
-          500: '#2F6B44',
-          600: '#215433',
-          700: '#1A4229',
-          800: '#143221',
-          900: '#0E241A',
+          50: v('--c-moss-50'),
+          100: v('--c-moss-100'),
+          200: v('--c-moss-200'),
+          300: v('--c-moss-300'),
+          400: v('--c-moss-400'),
+          500: v('--c-moss-500'),
+          600: v('--c-moss-600'),
+          700: v('--c-moss-700'),
+          800: v('--c-moss-800'),
+          900: v('--c-moss-900'),
         },
-        // Warm secondary accent: clay / terracotta
+        // Warm secondary accent scale
         clay: {
-          100: '#F6E3D6',
-          200: '#EEC6AC',
-          300: '#E0A17B',
-          400: '#D07E4F',
-          500: '#B85F32',
-          600: '#9A4B26',
+          100: v('--c-clay-100'),
+          200: v('--c-clay-200'),
+          300: v('--c-clay-300'),
+          400: v('--c-clay-400'),
+          500: v('--c-clay-500'),
+          600: v('--c-clay-600'),
         },
       },
       fontFamily: {
@@ -44,8 +48,8 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        card: '0 1px 2px rgba(20, 35, 28, 0.04), 0 8px 24px -12px rgba(20, 35, 28, 0.18)',
-        lift: '0 2px 4px rgba(20, 35, 28, 0.06), 0 18px 40px -18px rgba(20, 35, 28, 0.28)',
+        card: '0 1px 2px rgb(var(--c-ink) / 0.04), 0 8px 24px -12px rgb(var(--c-ink) / 0.18)',
+        lift: '0 2px 4px rgb(var(--c-ink) / 0.06), 0 18px 40px -18px rgb(var(--c-ink) / 0.28)',
       },
       borderRadius: {
         xl2: '1.25rem',

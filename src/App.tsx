@@ -7,6 +7,7 @@ import WhoFor from './components/sections/WhoFor';
 import Pilot from './components/sections/Pilot';
 import Faq from './components/sections/Faq';
 import CtaBand from './components/sections/CtaBand';
+import ThemeSwitcher from './components/ui/ThemeSwitcher';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <CtaBand />
       </main>
       <Footer />
+      <ThemeSwitcher />
     </div>
   );
 }

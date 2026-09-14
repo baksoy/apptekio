@@ -1,8 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="a">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Brand palette bootstrap: applies ?theme=a|b|c or the saved choice before paint -->
+    <script>
+      (function () {
+        try {
+          var q = (new URLSearchParams(location.search).get('theme') || '').toLowerCase();
+          var valid = q === 'a' || q === 'b' || q === 'c';
+          var stored = localStorage.getItem('apptek-theme');
+          var theme = valid ? q : stored === 'b' || stored === 'c' ? stored : 'a';
+          document.documentElement.setAttribute('data-theme', theme);
+          if (valid) localStorage.setItem('apptek-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'a');
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>APPTEK — Automation that actually runs the week</title>
