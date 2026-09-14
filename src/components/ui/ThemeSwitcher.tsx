@@ -8,16 +8,16 @@ type ThemeId = 'a' | 'b' | 'c';
 const THEMES: { id: ThemeId; name: string; swatch: [string, string, string] }[] = [
   { id: 'a', name: 'Evergreen', swatch: ['#14231C', '#2F6B44', '#D07E4F'] },
   { id: 'b', name: 'Turquoise', swatch: ['#0C1D22', '#0C877D', '#E86F52'] },
-  { id: 'c', name: 'Azure', swatch: ['#0E1A2B', '#245FB5', '#E19E2B'] },
+  { id: 'c', name: 'Azure (warm)', swatch: ['#1B2A43', '#3064AC', '#E3A033'] },
 ];
 
 function readTheme(): ThemeId {
   const current = document.documentElement.getAttribute('data-theme');
-  return current === 'b' || current === 'c' ? current : 'a';
+  return current === 'a' || current === 'b' ? current : 'c';
 }
 
 export default function ThemeSwitcher() {
-  const [theme, setTheme] = useState<ThemeId>('a');
+  const [theme, setTheme] = useState<ThemeId>('c');
   const [open, setOpen] = useState(false);
 
   useEffect(() => {

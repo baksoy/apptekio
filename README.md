@@ -16,41 +16,47 @@ in `tailwind.config.js`, so switching a theme restyles the whole site.
 - **In-page switcher** — subtle control fixed at the bottom-right (palette icon +
   A / B / C chips). Choice persists via `localStorage`.
 - **Query param** — `?theme=a`, `?theme=b`, or `?theme=c` (e.g.
-  `https://apptek.io/?theme=b`). Wins over the saved choice and applies before
+  `https://apptek.io/?theme=a`). Wins over the saved choice and applies before
   first paint (no flash).
-- **Default** is Variant A until Bera picks.
+- **Default is Variant C (warmed Azure)** — Bera's chosen direction. A and B are
+  kept in the switcher for now so the warmed C can still be compared.
 
-| Role | A — Evergreen | B — Turquoise | C — Azure |
+| Role | A — Evergreen | B — Turquoise | **C — Azure (warm, default)** |
 | --- | --- | --- | --- |
-| Paper (bg) | `#F7F4EC` | `#F1F6F6` | `#F3F5FA` |
-| Paper soft | `#FCFAF4` | `#FAFDFD` | `#FAFBFE` |
-| Paper deep | `#EFEADD` | `#E2EDED` | `#E6EBF4` |
-| Ink (dark/text) | `#14231C` | `#0C1D22` | `#0E1A2B` |
-| Ink soft | `#26382F` | `#17323A` | `#1E2E45` |
-| Ink muted | `#55655C` | `#52686E` | `#59657C` |
-| **Primary 500** | `#2F6B44` | `#0C877D` | `#245FB5` |
-| **Primary 600** | `#215433` | `#0A6C64` | `#1C4C94` |
-| Primary 100 | `#D6E6D9` | `#C3E9E5` | `#CFE0F6` |
-| Primary 200 | `#AECCB4` | `#92D7D0` | `#A3C4EE` |
-| **Warm accent 400** | `#D07E4F` | `#E86F52` | `#E19E2B` |
-| Warm accent 300 | `#E0A17B` | `#F1977E` | `#EEB958` |
-| Warm accent 600 | `#9A4B26` | `#AC3E22` | `#9E6210` |
+| Paper (bg) | `#F7F4EC` | `#F1F6F6` | `#F7F3EA` |
+| Paper soft | `#FCFAF4` | `#FAFDFD` | `#FCFAF3` |
+| Paper deep | `#EFEADD` | `#E2EDED` | `#EEE6D6` |
+| Ink (dark/text) | `#14231C` | `#0C1D22` | `#1B2A43` |
+| Ink soft | `#26382F` | `#17323A` | `#2A3C59` |
+| Ink muted | `#55655C` | `#52686E` | `#63697A` |
+| **Primary 500** | `#2F6B44` | `#0C877D` | `#3064AC` |
+| **Primary 600** | `#215433` | `#0A6C64` | `#26538F` |
+| Primary 100 | `#D6E6D9` | `#C3E9E5` | `#D7E4F5` |
+| Primary 200 | `#AECCB4` | `#92D7D0` | `#AFC8EA` |
+| **Warm accent 400** | `#D07E4F` | `#E86F52` | `#E3A033` |
+| Warm accent 300 | `#E0A17B` | `#F1977E` | `#EFBB5F` |
+| Warm accent 600 | `#9A4B26` | `#AC3E22` | `#9C6410` |
 
 Full 10-step primary and 6-step warm scales (used for chips, borders, glows,
 etc.) live in `src/index.css` under each `[data-theme]` block.
 
+- **C — Azure (warm) — DEFAULT:** warm cream/ivory paper (not clinical
+  cool-white), softened royal-azure primary, warm navy ink, and a honey-gold
+  accent. The primary **CTAs ("Start onboarding") use the gold accent** so the
+  page feels welcoming to SMB humans, not cold enterprise blue — while the azure
+  brand DNA carries the headline highlight, links, eyebrows, icons, and dark
+  sections. The gold-CTA treatment is scoped to `[data-theme='c']` (see the
+  override block in `src/index.css`), so A and B keep their original ink CTAs.
 - **A — Evergreen:** warm cream paper, deep forest-green primary, terracotta/clay
   accent. The original earthy system.
-- **B — Turquoise (turquoise-forward candidate):** cool near-white paper,
-  turquoise-teal primary, deep teal-slate ink, warm coral accent — fresh and
-  modern but still premium, not a generic teal SaaS template.
-- **C — Azure:** cool paper, royal-azure blue primary, deep navy ink, amber/gold
-  accent — classic, trustworthy, distinct from both A and B (blue, not purple).
+- **B — Turquoise:** cool near-white paper, turquoise-teal primary, deep
+  teal-slate ink, warm coral accent — fresh and modern, still premium.
 
-**Locking a choice later:** set `data-theme` on `<html>` in `index.html` to the
-winner (already defaults to `a`), and you can delete `src/components/ui/ThemeSwitcher.tsx`
-plus its import in `App.tsx` to remove the preview control. The unused
-`[data-theme]` blocks in `src/index.css` can then be dropped too.
+**Locking C as the only theme later:** `<html>` already defaults to
+`data-theme="c"`. Once Bera confirms, you can delete
+`src/components/ui/ThemeSwitcher.tsx` plus its import in `App.tsx`, and drop the
+`[data-theme='a']` / `[data-theme='b']` blocks in `src/index.css` (keep the
+`[data-theme='c']` block and its CTA overrides).
 
 ## Local development
 

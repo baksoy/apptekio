@@ -61,29 +61,49 @@
 }
 
 [data-theme='c'] {
-  /* Variant C — Azure (royal-azure primary / deep navy ink / amber-gold) */
-  --c-paper: 243 245 250;
-  --c-paper-soft: 250 251 254;
-  --c-paper-deep: 230 235 244;
-  --c-ink: 14 26 43;
-  --c-ink-soft: 30 46 69;
-  --c-ink-muted: 89 101 124;
-  --c-moss-50: 234 241 251;
-  --c-moss-100: 207 224 246;
-  --c-moss-200: 163 196 238;
-  --c-moss-300: 110 160 226;
-  --c-moss-400: 62 123 209;
-  --c-moss-500: 36 95 181;
-  --c-moss-600: 28 76 148;
-  --c-moss-700: 22 60 116;
-  --c-moss-800: 17 45 87;
-  --c-moss-900: 12 31 61;
-  --c-clay-100: 251 235 203;
+  /* Variant C — Azure, warmed (soft azure primary / warm navy ink / honey-gold accent) */
+  --c-paper: 247 243 234;
+  --c-paper-soft: 252 250 243;
+  --c-paper-deep: 238 230 214;
+  --c-ink: 27 42 67;
+  --c-ink-soft: 42 60 89;
+  --c-ink-muted: 99 105 122;
+  --c-moss-50: 237 243 251;
+  --c-moss-100: 215 228 245;
+  --c-moss-200: 175 200 234;
+  --c-moss-300: 124 163 218;
+  --c-moss-400: 79 128 198;
+  --c-moss-500: 48 100 172;
+  --c-moss-600: 38 83 143;
+  --c-moss-700: 30 65 114;
+  --c-moss-800: 22 49 86;
+  --c-moss-900: 16 35 61;
+  --c-clay-100: 251 233 198;
   --c-clay-200: 246 212 147;
-  --c-clay-300: 238 185 88;
-  --c-clay-400: 225 158 43;
-  --c-clay-500: 198 127 20;
-  --c-clay-600: 158 98 16;
+  --c-clay-300: 239 187 95;
+  --c-clay-400: 227 160 51;
+  --c-clay-500: 198 129 28;
+  --c-clay-600: 156 100 16;
+}
+
+/*
+  Variant C leans into the warm honey-gold accent on the primary CTAs so the
+  page feels inviting rather than cold enterprise blue. Scoped to data-theme='c'
+  so Variants A and B keep their original ink CTAs for comparison.
+*/
+[data-theme='c'] .btn-primary {
+  background-color: rgb(var(--c-clay-400));
+  color: rgb(var(--c-ink));
+}
+[data-theme='c'] .btn-primary:hover {
+  background-color: rgb(var(--c-clay-300));
+}
+[data-theme='c'] #start .btn.bg-paper-soft {
+  background-color: rgb(var(--c-clay-400));
+  color: rgb(var(--c-ink));
+}
+[data-theme='c'] #start .btn.bg-paper-soft:hover {
+  background-color: rgb(var(--c-clay-300));
 }
 
 html {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="a">
+<html lang="en" data-theme="c">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,11 +11,11 @@
           var q = (new URLSearchParams(location.search).get('theme') || '').toLowerCase();
           var valid = q === 'a' || q === 'b' || q === 'c';
           var stored = localStorage.getItem('apptek-theme');
-          var theme = valid ? q : stored === 'b' || stored === 'c' ? stored : 'a';
+          var theme = valid ? q : stored === 'a' || stored === 'b' ? stored : 'c';
           document.documentElement.setAttribute('data-theme', theme);
           if (valid) localStorage.setItem('apptek-theme', theme);
         } catch (e) {
-          document.documentElement.setAttribute('data-theme', 'a');
+          document.documentElement.setAttribute('data-theme', 'c');
         }
       })();
     </script>
