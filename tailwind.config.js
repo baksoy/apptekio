@@ -60,7 +60,7 @@ export default {
         },
       },
       animation: {
-        rise: 'rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+        rise: 'rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both',
       },
     },
   },
