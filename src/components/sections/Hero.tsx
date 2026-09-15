@@ -57,8 +57,9 @@ export default function Hero() {
 
             <Reveal delay={120}>
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-muted">
-                We set up digital helpers for the grind of running your business — customer
-                replies drafted before you open the laptop, follow-ups that don&apos;t go
+                We set up <span className="font-semibold text-ink">digital helpers</span> for the
+                grind of running your business — customer replies drafted before you open the
+                laptop, follow-ups that don&apos;t go
                 quiet, a calendar that keeps moving, invoice nudges and reminders that land on
                 time. <span className="font-semibold text-ink">Every send waits for your OK.</span>{' '}
                 You get more say over what goes out, and your attention back for the calls only
