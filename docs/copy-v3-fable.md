@@ -1,4 +1,4 @@
-# APPTEK landing copy — v3 (Fable polish)
+# Apptek landing copy — v3 (Fable polish)
 
 **Status:** Approved by Bera (with two hero edits), implemented in the React landing
 **Date:** 2026-09-15
@@ -22,7 +22,7 @@ Digital helpers take the busywork of the week — so you stay on the decisions t
 ---
 
 ## Meta / SEO
-- **Title:** APPTEK — Get your busywork handled. Stay in control.
+- **Title:** Apptek — Get your busywork handled. Stay in control.
 - **Description:** Digital helpers draft your week's busywork — replies, follow-ups, scheduling, reminders, invoice nudges — and every send waits for your OK. More say over what matters, less time on the grind.
 
 ---
@@ -180,6 +180,6 @@ A: Under the hood, yes — modern automation and current models, including xAI's
 ---
 
 ## Footer
-**Blurb:** APPTEK sets up digital helpers for the busywork of running a small business — so owners stay in charge of the decisions that matter, with every send waiting on their OK.
+**Blurb:** Apptek sets up digital helpers for the busywork of running a small business — so owners stay in charge of the decisions that matter, with every send waiting on their OK.
 **Talk to us:** hello@apptek.io · Talk about my week
 **Fine print:** How we build it: modern automation with current AI models, including xAI's Grok. You approve the output; we handle the engineering.

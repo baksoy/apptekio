@@ -2,7 +2,7 @@ interface WordmarkProps {
   className?: string;
 }
 
-// APPTEK wordmark — "Peak" concept: an azure ascent over a grounded amber line
+// Apptek wordmark — "Peak" concept: an azure ascent over a grounded amber line
 // (steady, upward momentum; also reads as an "A"). Colors use theme tokens so the
 // logo tracks the active palette (azure + amber on the default warmed Theme C).
 export default function Wordmark({ className = '' }: WordmarkProps) {

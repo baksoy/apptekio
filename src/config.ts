@@ -3,7 +3,7 @@
 export const CONTACT_EMAIL = 'hello@apptek.io';
 
 export const TALK_HREF = `mailto:${CONTACT_EMAIL}?subject=Let%E2%80%99s%20talk%20about%20my%20week`;
-export const GET_QUOTE_HREF = `mailto:${CONTACT_EMAIL}?subject=APPTEK%20quote%20request`;
+export const GET_QUOTE_HREF = `mailto:${CONTACT_EMAIL}?subject=Apptek%20quote%20request`;
 
 // CTA labels are locked (Bera, copy v3). Change here, not in components.
 export const PRIMARY_CTA = 'Talk about my week';

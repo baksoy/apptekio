@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="max-w-sm">
             <Wordmark />
             <p className="mt-4 text-sm leading-relaxed text-ink-muted">
-              APPTEK sets up digital helpers for the busywork of running a small business — so
+              Apptek sets up digital helpers for the busywork of running a small business — so
               owners stay in charge of the decisions that matter, with every send waiting on
               their OK.
             </p>
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-ink/10 pt-6 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} APPTEK. All rights reserved.</p>
+          <p>© {year} Apptek. All rights reserved.</p>
           <p className="max-w-xl sm:text-right">
             How we build it: modern automation with current AI models, including xAI&apos;s Grok.
             You approve the output; we handle the engineering.
