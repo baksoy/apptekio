@@ -39,7 +39,8 @@ Header CTA: **Talk about my week**
 **Headline:** Get your busywork handled. **Stay in control.**
 *(two sentences; highlight + underline swash on "Stay in control"; Bera's approved edit, 2026-09-15)*
 
-**Subhead:** We set up digital helpers for the grind of running your business — customer replies drafted before you open the laptop, follow-ups that don't go quiet, a calendar that keeps moving, invoice nudges and reminders that land on time. **Every send waits for your OK.** You get more say over what goes out, and your attention back for the calls only you can make.
+**Subhead:** We set up **digital helpers** for the grind of running your business — customer replies drafted before you open the laptop, follow-ups that don't go quiet, a calendar that keeps moving, invoice nudges and reminders that land on time. **Every send waits for your OK.** You get more say over what goes out, and your attention back for the calls only you can make.
+*(bold emphasis on "digital helpers" and "Every send waits for your OK." — same `font-semibold text-ink` treatment)*
 
 **Primary CTA:** Talk about my week
 **Secondary CTA:** Get a quote
