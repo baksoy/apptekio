@@ -130,8 +130,8 @@ Run `npm run build` and upload the contents of `dist/`.
 The copy is deliberate (current version: v3 "Fable polish" — full text in
 `docs/copy-v3-fable.md`). A few locked decisions:
 
-- **"Digital helpers," not "AI" / "bots."** We lead with the *outcome* ("Hand
-  off the busywork. Keep the final word.") and the plain-English noun **digital
+- **"Digital helpers," not "AI" / "bots."** We lead with the *outcome* ("Get
+  your busywork handled — stay in control") and the plain-English noun **digital
   helpers**. SMB buyers are AI-shy, so AI is kept below the fold: it appears
   only in the FAQ ("Am I giving up control to 'AI'?", "Is this AI?") and the
   footer fine print, and only *after* trust is established. xAI's **Grok** is
@@ -160,7 +160,7 @@ The copy is deliberate (current version: v3 "Fable polish" — full text in
   enterprise/"AI theater" framing, no Virginia LLC or legal entity on-page.
 
 ### Likely tweaks after Grok Bot Galaxy / market feedback
-- Headline A/B (`Hero.tsx`) if "Hand off the busywork" underperforms.
+- Headline A/B (`Hero.tsx`) if "Get your busywork handled" underperforms.
 - Whether to name Grok/AI higher up (`Hero.tsx`, `Faq.tsx`).
 - Whether to show the concrete pilot price (`Pilot.tsx`, `Faq.tsx`).
 - Add real social proof / a case study once the pilot completes.

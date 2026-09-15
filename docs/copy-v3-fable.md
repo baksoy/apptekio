@@ -1,6 +1,6 @@
 # APPTEK landing copy — v3 (Fable polish)
 
-**Status:** Final page copy, implemented in the React landing
+**Status:** Approved by Bera (with two hero edits), implemented in the React landing
 **Date:** 2026-09-15
 **Builds on:** First Mate's v3 direction draft (`copy-v3.md`) + Bera's feedback on v2
 **Kept:** Peak logo, warmed Azure Theme C, section layout, CTAs "Talk about my week" / "Get a quote"
@@ -34,10 +34,10 @@ Header CTA: **Talk about my week**
 ---
 
 ## Hero
-**Eyebrow:** Digital helpers for the busywork of your week
+**Eyebrow:** For business owners buried in the busywork of the week
 
-**Headline:** ★ Hand off the busywork. Keep **the final word**.
-*(highlight + underline swash on "the final word")*
+**Headline:** Get your busywork handled — **stay in control**
+*(highlight + underline swash on "stay in control"; Bera's approved edit, 2026-09-15)*
 
 **Subhead:** APPTEK sets up digital helpers for the grind of running a small business — customer replies drafted before you open the laptop, follow-ups that don't go quiet, a calendar that keeps moving, invoice nudges and reminders that land on time. **Every send waits for your OK.** You get more say over what goes out, and your attention back for the calls only you can make.
 

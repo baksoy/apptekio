@@ -26,16 +26,16 @@ export default function Hero() {
             <Reveal>
               <span className="eyebrow">
                 <span className="h-1.5 w-1.5 rounded-full bg-moss-500" />
-                Digital helpers for the busywork of your week
+                For business owners buried in the busywork of the week
               </span>
             </Reveal>
 
             <Reveal delay={60}>
               <h1 className="mt-5 font-display text-[2.65rem] font-semibold leading-[1.03] tracking-tight text-ink sm:text-6xl lg:text-[4.1rem]">
-                Hand off the busywork.
-                <br className="hidden sm:block" /> Keep{' '}
+                Get your busywork handled
+                <br className="hidden sm:block" /> —{' '}
                 <span className="relative whitespace-nowrap text-moss-600">
-                  the final word
+                  stay in control
                   <svg
                     aria-hidden="true"
                     viewBox="0 0 320 24"
@@ -51,7 +51,6 @@ export default function Hero() {
                     />
                   </svg>
                 </span>
-                .
               </h1>
             </Reveal>
 
