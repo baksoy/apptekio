@@ -131,7 +131,7 @@ The copy is deliberate (current version: v3 "Fable polish" — full text in
 `docs/copy-v3-fable.md`). A few locked decisions:
 
 - **"Digital helpers," not "AI" / "bots."** We lead with the *outcome* ("Get
-  your busywork handled — stay in control") and the plain-English noun **digital
+  your busywork handled. Stay in control.") and the plain-English noun **digital
   helpers**. SMB buyers are AI-shy, so AI is kept below the fold: it appears
   only in the FAQ ("Am I giving up control to 'AI'?", "Is this AI?") and the
   footer fine print, and only *after* trust is established. xAI's **Grok** is
