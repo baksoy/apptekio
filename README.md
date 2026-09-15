@@ -1,6 +1,6 @@
 # apptek.io — marketing landing
 
-A fast, single-page marketing landing for **APPTEK**: digital helpers for the busywork of small
+A fast, single-page marketing landing for **Apptek**: digital helpers for the busywork of small
 and mid-sized teams. Built with Vite + React + TypeScript + Tailwind CSS. Static
 output, no backend.
 
@@ -60,7 +60,7 @@ etc.) live in `src/index.css` under each `[data-theme]` block.
 
 ## Logo & brand marks
 
-APPTEK ships an SVG wordmark + icon mark (no AI-robot cliché, no generic SaaS
+Apptek ships an SVG wordmark + icon mark (no AI-robot cliché, no generic SaaS
 swoosh), tuned to the warmed Azure palette (soft royal-azure + honey-gold).
 Four concepts are provided so the mark can still be swapped:
 

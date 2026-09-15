@@ -22,7 +22,7 @@ export default function Header() {
     >
       <div className="container-content">
         <div className="flex items-center justify-between py-4">
-          <a href="#top" className="flex items-center" aria-label="APPTEK home">
+          <a href="#top" className="flex items-center" aria-label="Apptek home">
             <Wordmark />
           </a>
 

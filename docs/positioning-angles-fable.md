@@ -1,4 +1,4 @@
-# APPTEK positioning angles — the whole shelf (Fable)
+# Apptek positioning angles — the whole shelf (Fable)
 
 **Status:** Strategic brief for Bera — pick 2–3 angles to develop next. Not site copy.
 **Date:** 2026-09-15
@@ -68,7 +68,7 @@ Marketing ("Get found & chosen") is real and Bera is right to want it — but it
 - **Who hurts:** Everyone in the 3–50 band. That's the problem — it's true of everyone and urgent for no one.
 - **Theater risk:** Low. Nobody thinks a drafted reply is a magic trick. The risk here is **vagueness**, not hype: "save time" is what every tool says.
 - **Fit:** **Umbrella.** Keep it as the hero frame and the company's personality. Don't sell the pilot on it — sell the pilot on one of the leaks below and let "reclaim the week" be what the owner *feels* afterward.
-- **Opinion:** This is the best *brand* line APPTEK has and the weakest *sales* line. Both can be true.
+- **Opinion:** This is the best *brand* line Apptek has and the weakest *sales* line. Both can be true.
 
 ### 2. The Monday note
 - **Promise:** Know where the week stands before it starts — in one plain-English note, not a dashboard.
@@ -94,7 +94,7 @@ Marketing ("Get found & chosen") is real and Bera is right to want it — but it
 - **Helper jobs:** Quote sent → follow-up drafts at day 2 / 7 / 14 with escalating warmth · "anything unclear in the estimate?" reply · expiring-quote reminder · open-quotes-by-value tally every Friday · lost-quote "what did you go with?" note (free market research).
 - **Who hurts:** **Trades and agencies** — anyone with bespoke pricing and a proposal stage. Practices rarely quote.
 - **Theater risk:** **Low.** It's a calendar and a tone.
-- **Fit:** **Pilot.** For a trade doing $5k jobs, three revived quotes pays for a year of APPTEK. Often the single highest-dollar leak on the list.
+- **Fit:** **Pilot.** For a trade doing $5k jobs, three revived quotes pays for a year of Apptek. Often the single highest-dollar leak on the list.
 - **Opinion:** Speed-to-lead and quote follow-through get lumped together and shouldn't be — different moment, different tone, different owner (the estimator vs the front desk). Separate them in the pitch; they share one helper under the hood.
 
 ### 5. Bring them back *(not on the seed list — the biggest gap)*
@@ -121,13 +121,13 @@ Bera's explicit interest, and the right instinct: owners *want* to be told how t
 - **Helper jobs:** Monthly newsletter draft from the month's real jobs · Google Business Profile post draft from a job photo + two lines · before/after write-up · seasonal reminder email ("it's gutter season") · "we're hiring / new service / holiday hours" notices · reply drafts to comments and DMs.
 - **Who hurts:** Owners who *know* they should post and haven't since March.
 - **Theater risk:** **Med–High.** "AI content" is the most-recognized AI theater on earth, and customers can smell it. The **only** defensible version: every draft starts from a real input (a job done, a question asked, a review received). No topic generators, no "10 tips" listicles, no stock imagery.
-- **Fit:** **Expand 2.** Sell it after the owner has approved 200 helper drafts and trusts the voice. Selling it first is how APPTEK becomes "the AI content guys."
+- **Fit:** **Expand 2.** Sell it after the owner has approved 200 helper drafts and trusts the voice. Selling it first is how Apptek becomes "the AI content guys."
 
 #### 6c. Ad spend watch
 - **Promise:** Nobody wastes your ad money quietly — you see spend vs leads every week and decide.
 - **Helper jobs:** Weekly spend vs leads vs booked jobs note · alert draft when cost-per-lead jumps · "pause this / shift that" recommendation for owner approval · monthly snapshot of competitor ads and offers · plain-English translation of the agency's report.
 - **Who hurts:** Owners running ads through a platform or a small agency they don't fully trust.
-- **Theater risk:** **Med.** "AI optimizes your ads" is a crowded, hype-heavy shelf, and Google/Meta already claim it. APPTEK's honest role is **the owner's eyes on the platform or the agency** — not another optimizer.
+- **Theater risk:** **Med.** "AI optimizes your ads" is a crowded, hype-heavy shelf, and Google/Meta already claim it. Apptek's honest role is **the owner's eyes on the platform or the agency** — not another optimizer.
 - **Fit:** **Expand 2**, and only after 6a exists (you can't watch spend against leads you haven't counted). Recommendations, never hands on the account, unless Bera decides otherwise (see open questions).
 
 #### 6d. Local market read
@@ -272,7 +272,7 @@ Always included, free, as a byproduct: **#6a Know where customers come from** �
 
 ---
 
-## If APPTEK were a shelf of offers — naming options
+## If Apptek were a shelf of offers — naming options
 
 The v3 hero card already names helpers by **job** (Inbox helper, Follow-up helper, Scheduling helper). Keep that for the *individual* helpers. The question is how to name the **shelves** — the groups an owner picks from. Five options, plain English, in rough order of my preference:
 
@@ -322,7 +322,7 @@ The v3 hero card already names helpers by **job** (Inbox helper, Follow-up helpe
 4. Do we publish a **"what helpers will never do"** list (no bots talking to customers, no hiring decisions, no books, no medical/legal content)? I think it's a trust asset; it also fences the avoid list above.
 
 **Marketing**
-5. Does APPTEK ever have **hands on the ad account** (Google/Meta), or strictly read reports and recommend? Access, liability, and pricing all change.
+5. Does Apptek ever have **hands on the ad account** (Google/Meta), or strictly read reports and recommend? Access, liability, and pricing all change.
 6. For "a steady drumbeat," are we comfortable drafting anything that appears *publicly* under the owner's name, or only one-to-one messages? That decides whether 6b is Expand 2 or Avoid.
 
 **Access and compliance**
