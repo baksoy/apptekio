@@ -31,7 +31,7 @@ export default function HowItWorks() {
         <Reveal className="max-w-2xl">
           <span className="eyebrow">How it works</span>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Helpers do the grunt work. You make the calls.
+            Digital helpers do the grunt work. You make the calls.
           </h2>
           <p className="mt-4 text-lg text-ink-muted">
             No new app to learn, nothing to migrate. We find where your week leaks time and
