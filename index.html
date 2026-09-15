@@ -1,10 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="c">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Brand palette bootstrap: applies ?theme=a|b|c or the saved choice before paint -->
+    <script>
+      (function () {
+        try {
+          var q = (new URLSearchParams(location.search).get('theme') || '').toLowerCase();
+          var valid = q === 'a' || q === 'b' || q === 'c';
+          var stored = localStorage.getItem('apptek-theme');
+          var theme = valid ? q : stored === 'a' || stored === 'b' ? stored : 'c';
+          document.documentElement.setAttribute('data-theme', theme);
+          if (valid) localStorage.setItem('apptek-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'c');
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+
+    <title>APPTEK — Automation that actually runs the week</title>
+    <meta
+      name="description"
+      content="APPTEK sets up ops automation for small and mid-sized teams: one front door, a few specialist bots, and draft-then-approve control. Fewer dropped balls, a calmer week."
+    />
+    <meta name="theme-color" content="#14231C" />
+    <link rel="canonical" href="https://apptek.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="APPTEK" />
+    <meta property="og:url" content="https://apptek.io/" />
+    <meta property="og:title" content="APPTEK — Automation that actually runs the week" />
+    <meta
+      property="og:description"
+      content="Ops automation for small teams. One front door, a few specialist bots, draft-then-approve control, and a runbook you own. Get a quote or start onboarding."
+    />
+    <meta property="og:image" content="https://apptek.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="APPTEK — Automation that actually runs the week" />
+    <meta
+      name="twitter:description"
+      content="Ops automation for small teams. One front door, a few specialist bots, draft-then-approve control, and a runbook you own."
+    />
+    <meta name="twitter:image" content="https://apptek.io/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root"></div>

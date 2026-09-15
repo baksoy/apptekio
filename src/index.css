@@ -2,28 +2,153 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Brand palette variants. Each theme redefines the same token set as
+  space-separated RGB channels; tailwind.config.js maps them to color classes.
+  Default (:root) is Variant A. Switch with <html data-theme="a|b|c">.
+*/
+:root,
+[data-theme='a'] {
+  /* Variant A — Evergreen (paper / evergreen / clay) */
+  --c-paper: 247 244 236;
+  --c-paper-soft: 252 250 244;
+  --c-paper-deep: 239 234 221;
+  --c-ink: 20 35 28;
+  --c-ink-soft: 38 56 47;
+  --c-ink-muted: 85 101 92;
+  --c-moss-50: 238 244 239;
+  --c-moss-100: 214 230 217;
+  --c-moss-200: 174 204 180;
+  --c-moss-300: 127 174 137;
+  --c-moss-400: 84 140 98;
+  --c-moss-500: 47 107 68;
+  --c-moss-600: 33 84 51;
+  --c-moss-700: 26 66 41;
+  --c-moss-800: 20 50 33;
+  --c-moss-900: 14 36 26;
+  --c-clay-100: 246 227 214;
+  --c-clay-200: 238 198 172;
+  --c-clay-300: 224 161 123;
+  --c-clay-400: 208 126 79;
+  --c-clay-500: 184 95 50;
+  --c-clay-600: 154 75 38;
+}
+
+[data-theme='b'] {
+  /* Variant B — Turquoise (turquoise-teal primary / deep teal-slate ink / coral) */
+  --c-paper: 241 246 246;
+  --c-paper-soft: 250 253 253;
+  --c-paper-deep: 226 237 237;
+  --c-ink: 12 29 34;
+  --c-ink-soft: 23 50 58;
+  --c-ink-muted: 82 104 110;
+  --c-moss-50: 230 246 244;
+  --c-moss-100: 195 233 229;
+  --c-moss-200: 146 215 208;
+  --c-moss-300: 88 191 181;
+  --c-moss-400: 38 163 152;
+  --c-moss-500: 12 135 125;
+  --c-moss-600: 10 108 100;
+  --c-moss-700: 8 85 79;
+  --c-moss-800: 7 64 59;
+  --c-moss-900: 5 46 43;
+  --c-clay-100: 252 225 216;
+  --c-clay-200: 248 192 174;
+  --c-clay-300: 241 151 126;
+  --c-clay-400: 232 111 82;
+  --c-clay-500: 210 80 47;
+  --c-clay-600: 172 62 34;
+}
+
+[data-theme='c'] {
+  /* Variant C — Azure, warmed (soft azure primary / warm navy ink / honey-gold accent) */
+  --c-paper: 247 243 234;
+  --c-paper-soft: 252 250 243;
+  --c-paper-deep: 238 230 214;
+  --c-ink: 27 42 67;
+  --c-ink-soft: 42 60 89;
+  --c-ink-muted: 99 105 122;
+  --c-moss-50: 237 243 251;
+  --c-moss-100: 215 228 245;
+  --c-moss-200: 175 200 234;
+  --c-moss-300: 124 163 218;
+  --c-moss-400: 79 128 198;
+  --c-moss-500: 48 100 172;
+  --c-moss-600: 38 83 143;
+  --c-moss-700: 30 65 114;
+  --c-moss-800: 22 49 86;
+  --c-moss-900: 16 35 61;
+  --c-clay-100: 251 233 198;
+  --c-clay-200: 246 212 147;
+  --c-clay-300: 239 187 95;
+  --c-clay-400: 227 160 51;
+  --c-clay-500: 198 129 28;
+  --c-clay-600: 156 100 16;
+}
+
+/*
+  Variant C leans into the warm honey-gold accent on the primary CTAs so the
+  page feels inviting rather than cold enterprise blue. Scoped to data-theme='c'
+  so Variants A and B keep their original ink CTAs for comparison.
+*/
+[data-theme='c'] .btn-primary {
+  background-color: rgb(var(--c-clay-400));
+  color: rgb(var(--c-ink));
+}
+[data-theme='c'] .btn-primary:hover {
+  background-color: rgb(var(--c-clay-300));
+}
+[data-theme='c'] #start .btn.bg-paper-soft {
+  background-color: rgb(var(--c-clay-400));
+  color: rgb(var(--c-ink));
+}
+[data-theme='c'] #start .btn.bg-paper-soft:hover {
+  background-color: rgb(var(--c-clay-300));
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply antialiased text-gray-900;
+  @apply antialiased bg-paper text-ink font-sans;
+  font-feature-settings: 'ss01', 'ss02';
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-rise {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-moss-600;
+  }
 
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-moss-500 focus-visible:ring-offset-paper;
+  }
+
+  .btn-primary {
+    @apply btn bg-ink text-paper-soft hover:bg-ink-soft shadow-lift;
+  }
+
+  .btn-secondary {
+    @apply btn border border-ink/15 bg-transparent text-ink hover:border-ink/40 hover:bg-paper-deep;
+  }
+
+  .link-quiet {
+    @apply text-ink-muted transition-colors hover:text-ink;
+  }
 }

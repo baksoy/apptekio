@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APPTEK — Logo concepts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #f7f3ea;
+        --paper-soft: #fcfaf3;
+        --paper-deep: #eee6d6;
+        --ink: #1b2a43;
+        --ink-soft: #2a3c59;
+        --muted: #63697a;
+        --azure: #3064ac;
+        --amber: #e3a033;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 32px 80px; }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--azure);
+        margin: 0 0 12px;
+      }
+      h1 {
+        font-family: Fraunces, Georgia, serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.05;
+        letter-spacing: -0.5px;
+        margin: 0 0 10px;
+      }
+      .lede { color: var(--muted); font-size: 17px; max-width: 640px; margin: 0 0 40px; }
+      .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } .wrap { padding: 40px 20px 64px; } }
+      .card {
+        background: var(--paper-soft);
+        border: 1px solid rgba(27, 42, 67, 0.1);
+        border-radius: 20px;
+        padding: 26px;
+        box-shadow: 0 18px 40px -24px rgba(27, 42, 67, 0.35);
+        position: relative;
+      }
+      .badge-default {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        background: var(--amber);
+        color: var(--ink);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border-radius: 999px;
+      }
+      .concept-name { font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 600; margin: 22px 0 4px; }
+      .concept-idx { color: var(--azure); font-weight: 700; }
+      .concept-desc { color: var(--muted); font-size: 14px; line-height: 1.55; margin: 0; }
+      .hero-mark { display: flex; align-items: center; gap: 14px; }
+      .lockup { display: flex; align-items: center; gap: 12px; }
+      .wordmark { font-size: 26px; font-weight: 600; letter-spacing: -0.6px; color: var(--ink); }
+      .wordmark .dot { color: var(--amber); }
+      .sizes { display: flex; align-items: center; gap: 18px; margin-top: 20px; padding-top: 18px; border-top: 1px dashed rgba(27,42,67,0.12); }
+      .swatch-navy { background: var(--ink); border-radius: 10px; padding: 10px; display: inline-flex; gap: 10px; align-items: center; }
+      .size-label { font-size: 11px; color: var(--muted); }
+      .row { display: flex; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
+      footer { margin-top: 44px; color: var(--muted); font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <p class="eyebrow">APPTEK · brand exploration</p>
+      <h1>Logo concepts</h1>
+      <p class="lede">
+        Four marks for APPTEK — ops automation for small teams. Built on the warmed
+        Azure palette (soft royal-azure + honey-gold on warm paper). No AI-robot
+        clichés, no generic SaaS swoosh. Concept 1 is wired as the site default.
+      </p>
+
+      <div class="grid" id="grid"></div>
+
+      <footer>
+        Files: <code>public/brand/mark-[1–4]-*.svg</code> (icon) and
+        <code>public/brand/lockup-[1–4]-*.svg</code> (horizontal lockup). Swap the
+        default by editing <code>src/components/ui/Wordmark.tsx</code> and
+        <code>public/favicon.svg</code>.
+      </footer>
+    </div>
+
+    <script>
+      // Each mark drawn from the same 64x64 geometry as the SVG asset files.
+      const AZURE = '#3064AC', WHITE = '#FCFAF3', AMBER = '#E3A033';
+      const marks = {
+        1: `<path d="M17 42 L32 21 L47 42" stroke="${WHITE}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M22 48 L42 48" stroke="${AMBER}" stroke-width="5" stroke-linecap="round"/>`,
+        2: `<path d="M19 48 L19 33 A13 13 0 0 1 45 33 L45 48" stroke="${WHITE}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M25 40 L39 40" stroke="${AMBER}" stroke-width="5" stroke-linecap="round"/>`,
+        3: `<path d="M18 33 L28 43" stroke="${WHITE}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M28 43 L47 20" stroke="${AMBER}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`,
+        4: `<path d="M17 46 L17 40" stroke="${WHITE}" stroke-width="5" stroke-linecap="round"/><path d="M25 46 L25 36" stroke="${WHITE}" stroke-width="5" stroke-linecap="round"/><path d="M33 46 L33 32" stroke="${WHITE}" stroke-width="5" stroke-linecap="round"/><path d="M41 46 L41 28" stroke="${WHITE}" stroke-width="5" stroke-linecap="round"/><path d="M49 46 L49 21" stroke="${AMBER}" stroke-width="5" stroke-linecap="round"/>`,
+      };
+      const svg = (size, id) =>
+        `<svg width="${size}" height="${size}" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="16" fill="${AZURE}"/>${marks[id]}</svg>`;
+      const concepts = [
+        { id: 1, name: 'Peak', desc: 'A steady ascent over a grounded amber line — calm, upward momentum. Reads as an “A” apex; the most classic of the set. Default.', default: true },
+        { id: 2, name: 'Archway', desc: 'One front door with a warm amber threshold — the core positioning, made literal. The crossbar also reads as an “A”.' },
+        { id: 3, name: 'Approve', desc: 'A checkmark whose upstroke turns amber — the draft-then-approve moment where you say “go”. Action-forward.' },
+        { id: 4, name: 'Cadence', desc: 'Five rising strokes — a week handled, ending on a calm high in amber. Distinctive and rhythmic.' },
+      ];
+      document.getElementById('grid').innerHTML = concepts
+        .map(
+          (c) => `
+        <div class="card">
+          ${c.default ? '<span class="badge-default">Default</span>' : ''}
+          <div class="hero-mark">
+            <div class="lockup">
+              ${svg(56, c.id)}
+              <span class="wordmark">apptek<span class="dot">.</span></span>
+            </div>
+          </div>
+          <p class="concept-name"><span class="concept-idx">${c.id}.</span> ${c.name}</p>
+          <p class="concept-desc">${c.desc}</p>
+          <div class="sizes">
+            <div class="row">
+              <div style="text-align:center"><div>${svg(32, c.id)}</div><div class="size-label">32px</div></div>
+              <div style="text-align:center"><div>${svg(16, c.id)}</div><div class="size-label">16px favicon</div></div>
+              <div style="text-align:center"><div class="swatch-navy">${svg(28, c.id)}</div><div class="size-label">on navy</div></div>
+            </div>
+          </div>
+        </div>`
+        )
+        .join('');
+    </script>
+  </body>
+</html>

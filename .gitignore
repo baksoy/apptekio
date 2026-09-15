@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local screenshot artifacts (uploaded to PRs directly, not tracked)
+artifacts/
