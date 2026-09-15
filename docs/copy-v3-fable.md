@@ -70,7 +70,7 @@ Header CTA: **Talk about my week**
 ## How it works
 **Eyebrow:** How it works
 
-**Headline:** ★ Digital helpers do the grunt work. You make the calls.
+**Headline:** ★ Digital helpers do the grunt work. You decide and approve what goes out.
 
 **Intro:** No new app to learn, nothing to migrate. We find where your week leaks time and attention, set up digital helpers for exactly those jobs, and keep you as the final word on every message that leaves the building.
 
