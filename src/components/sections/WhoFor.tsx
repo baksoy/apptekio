@@ -2,18 +2,18 @@ import { Check, X } from 'lucide-react';
 import Reveal from '../ui/Reveal';
 
 const forYou = [
-  'Owners and ops leads wearing too many hats',
-  'Teams of roughly 3–50 drowning in follow-ups',
-  'Service businesses: clinics, agencies, trades, local operators',
-  'Anyone losing revenue to slow replies and dropped balls',
-  'People who want help, but still want the final say',
+  'An owner or ops lead wearing too many hats',
+  'A team of roughly 3–50 buried in follow-ups, scheduling, and reminders',
+  'A service business — clinic, agency, trade, practice, local operator',
+  'Losing goodwill or revenue when things go quiet for too long',
+  'Someone who wants help and a firmer grip on what goes out',
 ];
 
 const notYou = [
-  'Enterprises shopping for a year-long platform rollout',
-  'Anyone who wants a bot firing off messages unsupervised',
-  'Teams looking for “AI theater” with no real workflow behind it',
-  'Projects that need a 40-page RFP before anything ships',
+  'A year-long enterprise platform project',
+  'Messages firing at customers with nobody checking',
+  'Flashy “AI” demos with no real workflow behind them',
+  'A 40-page RFP before anything starts',
 ];
 
 export default function WhoFor() {
@@ -23,11 +23,11 @@ export default function WhoFor() {
         <Reveal className="max-w-2xl">
           <span className="eyebrow">Who it&apos;s for</span>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Right-sized for small and mid-sized teams.
+            Built for busy owners, not boardrooms.
           </h2>
           <p className="mt-4 text-lg text-ink-muted">
-            We&apos;re honest about fit. If you&apos;re small, busy, and tired of things falling
-            through the cracks — this is built for you.
+            We&apos;re honest about fit. If you&apos;re small, busy, and tired of watching the
+            week&apos;s busywork eat the day, this was built for you.
           </p>
         </Reveal>
 

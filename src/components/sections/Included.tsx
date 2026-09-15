@@ -1,36 +1,36 @@
-import { DoorOpen, Users, PenLine, Wallet, BookOpen, LifeBuoy } from 'lucide-react';
+import { Inbox, Users, PenLine, Wallet, BookOpen, LifeBuoy } from 'lucide-react';
 import Reveal from '../ui/Reveal';
 
 const included = [
   {
-    icon: DoorOpen,
-    title: 'One front door',
-    body: 'A single intake for requests across your channels, so your team stops juggling five inboxes.',
+    icon: Inbox,
+    title: 'One place for the week’s requests',
+    body: 'Customer asks from email, forms, and phone land in one spot, not in five different heads.',
   },
   {
     icon: Users,
-    title: 'A handful of specialists',
-    body: 'Focused helpers for the jobs that eat your week — follow-ups, scheduling, routine replies, data entry.',
+    title: 'Digital helpers for the jobs that eat the week',
+    body: 'Follow-ups, scheduling, routine replies, reminders, invoice nudges, light admin. Focused helpers, one job each — not a do-everything black box.',
   },
   {
     icon: PenLine,
-    title: 'Draft-then-approve',
-    body: 'Every message and action is prepared for your review first. You stay the final word, always.',
+    title: 'Approve before anything sends',
+    body: 'Every message is prepared for your review first. You stay the final word. Always.',
   },
   {
     icon: Wallet,
-    title: 'Spend governance',
-    body: 'Clear, capped costs with guardrails. No surprise bills, no runaway usage — you set the ceiling.',
+    title: 'Clear, capped pricing',
+    body: 'Guardrails you set, a ceiling you know. No surprise bills, no runaway usage.',
   },
   {
     icon: BookOpen,
-    title: 'A runbook you own',
-    body: 'Plain-English documentation of what runs, when, and why — yours to keep even if you leave.',
+    title: 'A written playbook you own',
+    body: 'What runs, when, and why, in plain English. Yours to keep — even if you leave.',
   },
   {
     icon: LifeBuoy,
-    title: 'Hands-on onboarding',
-    body: 'We do the setup with you and stay close after launch to tune things as your week changes.',
+    title: 'Hands-on setup with you',
+    body: 'We build it together and stay close after launch, tuning as your week changes.',
   },
 ];
 
@@ -41,11 +41,11 @@ export default function Included() {
         <Reveal className="max-w-2xl">
           <span className="eyebrow text-moss-200">What&apos;s included</span>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            One tidy offer. No mystery add-ons.
+            One clear package. No mystery add-ons.
           </h2>
           <p className="mt-4 text-lg text-paper/70">
-            Everything below comes in the box. We keep the scope small on purpose — it&apos;s
-            faster to launch and easier to trust.
+            Everything below is in scope from day one. We keep it small on purpose — small is
+            faster to trust and easier to run.
           </p>
         </Reveal>
 
