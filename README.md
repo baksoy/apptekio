@@ -1,6 +1,6 @@
 # apptek.io — marketing landing
 
-A fast, single-page marketing landing for **APPTEK**: ops automation for small
+A fast, single-page marketing landing for **APPTEK**: digital helpers for the busywork of small
 and mid-sized teams. Built with Vite + React + TypeScript + Tailwind CSS. Static
 output, no backend.
 
@@ -42,7 +42,7 @@ etc.) live in `src/index.css` under each `[data-theme]` block.
 
 - **C — Azure (warm) — DEFAULT:** warm cream/ivory paper (not clinical
   cool-white), softened royal-azure primary, warm navy ink, and a honey-gold
-  accent. The primary **CTAs ("Start onboarding") use the gold accent** so the
+  accent. The primary **CTAs ("Talk about my week") use the gold accent** so the
   page feels welcoming to SMB humans, not cold enterprise blue — while the azure
   brand DNA carries the headline highlight, links, eyebrows, icons, and dark
   sections. The gold-CTA treatment is scoped to `[data-theme='c']` (see the
@@ -127,29 +127,40 @@ Run `npm run build` and upload the contents of `dist/`.
 
 ## Positioning & copy notes (read before editing copy)
 
-The copy is deliberate. A few locked decisions:
+The copy is deliberate (current version: v3 "Fable polish" — full text in
+`docs/copy-v3-fable.md`). A few locked decisions:
 
-- **"Bot Ops" / "AI" naming.** We lead with the *outcome* ("Automation that
-  actually runs the week") and the plain-English category **ops automation for
-  small teams** — not "AI" and not "Grok Bot Ops". SMB buyers are AI-shy, so AI
-  is kept below the fold: it appears only in the FAQ ("What's the technology
-  behind it?") and the footer fine print, and only *after* trust is established.
-  xAI's **Grok** is named there and nowhere prominent. If market feedback says
-  buyers *want* the AI angle up top, that's a one-line change in `Hero.tsx`.
-- **CTA language is "onboarding," not "setup."** Primary CTA is *Start
-  onboarding*; the quote path is *Get a quote*. Keep this wording.
+- **"Digital helpers," not "AI" / "bots."** We lead with the *outcome* ("Hand
+  off the busywork. Keep the final word.") and the plain-English noun **digital
+  helpers**. SMB buyers are AI-shy, so AI is kept below the fold: it appears
+  only in the FAQ ("Am I giving up control to 'AI'?", "Is this AI?") and the
+  footer fine print, and only *after* trust is established. xAI's **Grok** is
+  named there and nowhere prominent.
+- **Banned in headlines:** front door, specialists, runbook, ops automation,
+  bot ops, AI. Use "one place for requests," "helpers," "playbook" instead.
+- **Busywork is the whole week, not just email.** Wherever the grind is
+  described, name the spread: replies, follow-ups, scheduling, reminders,
+  invoice nudges, routine updates.
+- **Control is a gain, not a concession.** Helpers do the typing and chasing so
+  the owner has *more* say over what goes out and better attention for
+  decisions. "You approve before anything sends" stays everywhere. Avoid the
+  cliché "slip through the cracks."
+- **CTA language.** Primary CTA is *Talk about my week*; the quote path is
+  *Get a quote*. Both labels live in `src/config.ts` (`PRIMARY_CTA`,
+  `SECONDARY_CTA`) — change them there, not in components.
 - **Pricing is soft.** The pilot is framed as "small, fixed-scope" with a
-  "modest, predictable band" behind *Get a quote* — no dollar figure on-page.
+  "small, predictable band" behind *Get a quote* — no dollar figure on-page.
   If you want to surface the ~$1–1.5k band, edit `Pilot.tsx` and `Faq.tsx`.
-- **The offer spine** is one front door → a few specialists →
-  draft-then-approve → spend governance → a runbook you own → hands-on
-  onboarding. This runs through the hero card, "How it works," and "What's
-  included." Keep these consistent if you rename anything.
+- **The offer spine** is one place for the week's requests → digital helpers
+  (one job each) → approve before anything sends → clear, capped pricing → a
+  written playbook you own → hands-on setup. This runs through the hero card,
+  "How it works," and "What's included." Keep these consistent if you rename
+  anything.
 - **Deliberately absent:** no Salesforce/MuleSoft comparisons, no
   enterprise/"AI theater" framing, no Virginia LLC or legal entity on-page.
 
 ### Likely tweaks after Grok Bot Galaxy / market feedback
-- Headline A/B (`Hero.tsx`) if "runs the week" underperforms.
+- Headline A/B (`Hero.tsx`) if "Hand off the busywork" underperforms.
 - Whether to name Grok/AI higher up (`Hero.tsx`, `Faq.tsx`).
 - Whether to show the concrete pilot price (`Pilot.tsx`, `Faq.tsx`).
 - Add real social proof / a case study once the pilot completes.

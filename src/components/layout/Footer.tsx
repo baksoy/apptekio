@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, NAV_LINKS } from '../../config';
+import { CONTACT_EMAIL, NAV_LINKS, PRIMARY_CTA, TALK_HREF } from '../../config';
 import Wordmark from '../ui/Wordmark';
 
 export default function Footer() {
@@ -10,8 +10,9 @@ export default function Footer() {
           <div className="max-w-sm">
             <Wordmark />
             <p className="mt-4 text-sm leading-relaxed text-ink-muted">
-              Ops automation for small teams. One front door, a few specialists, and a
-              draft-then-approve rhythm that keeps you in control.
+              APPTEK sets up digital helpers for the busywork of running a small business — so
+              owners stay in charge of the decisions that matter, with every send waiting on
+              their OK.
             </p>
           </div>
 
@@ -41,8 +42,8 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#start" className="text-sm link-quiet">
-                    Start onboarding
+                  <a href={TALK_HREF} className="text-sm link-quiet">
+                    {PRIMARY_CTA}
                   </a>
                 </li>
               </ul>
@@ -53,8 +54,8 @@ export default function Footer() {
         <div className="mt-12 flex flex-col gap-3 border-t border-ink/10 pt-6 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} APPTEK. All rights reserved.</p>
           <p className="max-w-xl sm:text-right">
-            How we build it: modern automation tooling with current AI models, including xAI&apos;s
-            Grok. You approve the output; we handle the engineering.
+            How we build it: modern automation with current AI models, including xAI&apos;s Grok.
+            You approve the output; we handle the engineering.
           </p>
         </div>
       </div>

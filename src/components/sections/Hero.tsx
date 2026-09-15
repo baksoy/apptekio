@@ -1,13 +1,13 @@
-import { ArrowRight, Check, ShieldCheck, Wallet, BookOpen } from 'lucide-react';
-import { GET_QUOTE_HREF, START_ONBOARDING_HREF } from '../../config';
+import { ArrowRight, Check, Eye, ShieldCheck, Wallet } from 'lucide-react';
+import { GET_QUOTE_HREF, PRIMARY_CTA, SECONDARY_CTA, TALK_HREF } from '../../config';
 import Reveal from '../ui/Reveal';
 import WeekCard from '../ui/WeekCard';
 
 const trust = [
   { icon: Check, label: 'You approve before anything goes out' },
-  { icon: Wallet, label: 'Spend stays capped' },
-  { icon: BookOpen, label: 'A runbook you actually own' },
-  { icon: ShieldCheck, label: 'Start small, cancel anytime' },
+  { icon: Eye, label: 'More say over what matters, less time on the grind' },
+  { icon: ShieldCheck, label: 'Loose ends caught by design, not by luck' },
+  { icon: Wallet, label: 'Costs capped · start small · stop anytime' },
 ];
 
 export default function Hero() {
@@ -26,16 +26,16 @@ export default function Hero() {
             <Reveal>
               <span className="eyebrow">
                 <span className="h-1.5 w-1.5 rounded-full bg-moss-500" />
-                Ops automation for small teams
+                Digital helpers for the busywork of your week
               </span>
             </Reveal>
 
             <Reveal delay={60}>
               <h1 className="mt-5 font-display text-[2.65rem] font-semibold leading-[1.03] tracking-tight text-ink sm:text-6xl lg:text-[4.1rem]">
-                Automation that
-                <br className="hidden sm:block" /> actually runs{' '}
+                Hand off the busywork.
+                <br className="hidden sm:block" /> Keep{' '}
                 <span className="relative whitespace-nowrap text-moss-600">
-                  the week
+                  the final word
                   <svg
                     aria-hidden="true"
                     viewBox="0 0 320 24"
@@ -57,21 +57,23 @@ export default function Hero() {
 
             <Reveal delay={120}>
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-muted">
-                We set up the quiet operations layer for your business: one front door for
-                requests, a few specialists that handle the busywork, and a{' '}
-                <span className="font-semibold text-ink">draft-then-approve</span> rhythm so
-                nothing goes out without you. Fewer dropped balls. A calmer week.
+                APPTEK sets up digital helpers for the grind of running a small business —
+                customer replies drafted before you open the laptop, follow-ups that don&apos;t go
+                quiet, a calendar that keeps moving, invoice nudges and reminders that land on
+                time. <span className="font-semibold text-ink">Every send waits for your OK.</span>{' '}
+                You get more say over what goes out, and your attention back for the calls only
+                you can make.
               </p>
             </Reveal>
 
             <Reveal delay={180}>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <a href={START_ONBOARDING_HREF} className="btn-primary group">
-                  Start onboarding
+                <a href={TALK_HREF} className="btn-primary group">
+                  {PRIMARY_CTA}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </a>
                 <a href={GET_QUOTE_HREF} className="btn-secondary">
-                  Get a quote
+                  {SECONDARY_CTA}
                 </a>
               </div>
             </Reveal>

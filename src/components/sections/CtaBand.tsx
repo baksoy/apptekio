@@ -1,5 +1,11 @@
 import { ArrowRight } from 'lucide-react';
-import { CONTACT_EMAIL, GET_QUOTE_HREF, START_ONBOARDING_HREF } from '../../config';
+import {
+  CONTACT_EMAIL,
+  GET_QUOTE_HREF,
+  PRIMARY_CTA,
+  SECONDARY_CTA,
+  TALK_HREF,
+} from '../../config';
 import Reveal from '../ui/Reveal';
 
 export default function CtaBand() {
@@ -16,23 +22,23 @@ export default function CtaBand() {
           </div>
 
           <h2 className="mx-auto max-w-2xl font-display text-3xl font-semibold tracking-tight sm:text-[2.6rem] sm:leading-[1.1]">
-            Get your week back.
+            Tell us where your week&apos;s busywork lives.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-paper/70">
-            Tell us where the week gets stuck. We&apos;ll show you exactly what we&apos;d
-            automate first — and what it would cost.
+            We&apos;ll show you what we&apos;d take off your plate first — and what stays firmly
+            with you.
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href={START_ONBOARDING_HREF} className="btn group bg-paper-soft text-ink hover:bg-paper">
-              Start onboarding
+            <a href={TALK_HREF} className="btn group bg-paper-soft text-ink hover:bg-paper">
+              {PRIMARY_CTA}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
               href={GET_QUOTE_HREF}
               className="btn border border-paper/25 text-paper-soft hover:bg-paper/10"
             >
-              Get a quote
+              {SECONDARY_CTA}
             </a>
           </div>
 

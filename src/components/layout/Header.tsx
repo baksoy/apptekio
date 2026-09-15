@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { NAV_LINKS, START_ONBOARDING_HREF } from '../../config';
+import { NAV_LINKS, PRIMARY_CTA, TALK_HREF } from '../../config';
 import Wordmark from '../ui/Wordmark';
 
 export default function Header() {
@@ -35,8 +35,8 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:block">
-            <a href={START_ONBOARDING_HREF} className="btn-primary">
-              Start onboarding
+            <a href={TALK_HREF} className="btn-primary">
+              {PRIMARY_CTA}
             </a>
           </div>
 
@@ -64,11 +64,11 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href={START_ONBOARDING_HREF}
+                href={TALK_HREF}
                 onClick={() => setIsMenuOpen(false)}
                 className="btn-primary mt-2 w-full"
               >
-                Start onboarding
+                {PRIMARY_CTA}
               </a>
             </div>
           </div>

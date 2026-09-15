@@ -4,28 +4,32 @@ import Reveal from '../ui/Reveal';
 
 const faqs = [
   {
-    q: 'Will this send things to my customers without me seeing them?',
-    a: 'No. That’s the whole point of draft-then-approve. Every reply, follow-up, or action is prepared for you and waits for your OK. You can loosen that later for low-risk tasks — but only if and when you want to.',
+    q: 'Will this message my customers without me?',
+    a: 'No. Every reply, follow-up, and reminder is prepared for you and waits for your OK. Later, if you want, you can loosen that for low-risk jobs — but only when you choose to, and you can tighten it again any time.',
   },
   {
-    q: 'Do I have to replace the tools I already use?',
-    a: 'No rip-and-replace. We connect to the email, calendar, forms, and systems you already run. The goal is a quiet layer on top of your work, not a new platform for your team to learn.',
+    q: 'Am I giving up control to “AI”?',
+    a: 'The opposite. Helpers take the typing and chasing; you keep every decision and approve every send. You end up seeing more of what leaves your business than before, because it all passes in front of you first — more oversight on what matters, less time on the grind.',
+  },
+  {
+    q: 'Do I have to replace my tools?',
+    a: 'No. We connect to the email, calendar, forms, and systems you already use. Think of it as a quiet layer on top of your week, not a new platform for your team to learn.',
   },
   {
     q: 'How much does it cost?',
-    a: 'We start with a small, fixed-scope pilot so you can see value before committing. Pricing is transparent and capped up front — most pilots land in a modest, predictable band. Tell us your scope and we’ll send an exact quote.',
+    a: 'We start with a small, fixed-scope pilot so you see value before committing to more. Pricing is transparent and capped up front — most pilots land in a small, predictable band. Tell us your scope and we’ll send an exact quote.',
   },
   {
-    q: 'What happens if I want to leave?',
-    a: 'You keep the runbook — plain-English documentation of everything that runs and why. No lock-in, no black box. Start small, cancel anytime.',
+    q: 'What if we stop?',
+    a: 'You keep the written playbook — plain English on everything that runs and why. No lock-in, no black box. Start small, stop anytime.',
   },
   {
-    q: 'How do you keep spend from running away?',
-    a: 'Every workflow runs under caps and guardrails you approve. You set the ceiling, we monitor usage, and there are no surprise bills.',
+    q: 'How do you keep costs from running away?',
+    a: 'Everything runs under caps you set. You know the ceiling, we watch usage, and there are no surprise bills.',
   },
   {
-    q: 'What’s the technology behind it?',
-    a: 'Under the hood we build on current AI models — including xAI’s Grok — plus proven automation tooling. But you don’t have to think about any of that. We handle the engineering and keep you focused on approving good work and getting your week back.',
+    q: 'Is this AI?',
+    a: 'Under the hood, yes — modern automation and current models, including xAI’s Grok. Day to day, what you see is drafts waiting for your approval. We handle the engineering; you handle the yes.',
   },
 ];
 
@@ -68,7 +72,7 @@ export default function Faq() {
             </h2>
             <p className="mt-4 text-lg text-ink-muted">
               Still wondering something? Ask us directly — we&apos;d rather have a real
-              conversation than sell you a mystery.
+              conversation about your week than sell you a mystery.
             </p>
           </Reveal>
 

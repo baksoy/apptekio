@@ -2,23 +2,23 @@ import { Check, Clock, Inbox, PenLine } from 'lucide-react';
 
 const items = [
   {
-    title: 'Reply to 14 overnight inquiries',
-    meta: 'Front door · drafted 7:02am',
+    title: 'Overnight inquiries answered',
+    meta: 'Inbox helper · 9 drafts ready before open',
     status: 'approved' as const,
   },
   {
-    title: 'Chase 3 overdue invoices',
-    meta: 'Billing specialist · drafts ready',
+    title: 'Three quiet follow-ups nudged',
+    meta: 'Follow-up helper · drafts waiting on you',
     status: 'review' as const,
   },
   {
-    title: 'Book Thursday site visits',
-    meta: 'Scheduling specialist · calendar synced',
+    title: 'Thursday visits on the calendar',
+    meta: 'Scheduling helper · booked and confirmed',
     status: 'approved' as const,
   },
   {
-    title: 'Draft weekly customer update',
-    meta: 'Waiting for your one-line note',
+    title: 'Weekly customer note',
+    meta: 'Waiting on your one-line update',
     status: 'waiting' as const,
   },
 ];
@@ -44,7 +44,7 @@ export default function WeekCard() {
             </span>
             <div>
               <p className="text-sm font-semibold text-ink">This week, handled</p>
-              <p className="text-xs text-ink-muted">Your front door · Mon–Fri</p>
+              <p className="text-xs text-ink-muted">Your week at a glance · Mon–Fri</p>
             </div>
           </div>
           <span className="rounded-full bg-moss-100 px-2.5 py-1 text-xs font-semibold text-moss-700">
@@ -77,7 +77,7 @@ export default function WeekCard() {
         </ul>
 
         <div className="mt-5 flex items-center justify-between rounded-xl bg-ink px-4 py-3 text-paper-soft">
-          <span className="text-sm font-medium">Nothing goes out without your OK.</span>
+          <span className="text-sm font-medium">Every send waits for your OK.</span>
           <span className="text-xs text-moss-200">2 awaiting approval</span>
         </div>
       </div>

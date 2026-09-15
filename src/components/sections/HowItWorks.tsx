@@ -1,26 +1,26 @@
-import { DoorOpen, Users, PenLine, LineChart } from 'lucide-react';
+import { ListChecks, Users, PenLine, BookOpen } from 'lucide-react';
 import Reveal from '../ui/Reveal';
 
 const steps = [
   {
-    icon: DoorOpen,
-    title: 'One front door',
-    body: 'Requests from email, forms, chat and phone land in a single place — so nothing slips through the cracks or lives in someone’s head.',
+    icon: ListChecks,
+    title: 'Map the busywork',
+    body: 'Where do requests pile up? Which follow-ups go quiet? What keeps getting pushed to Friday? We sit down with you and pick two or three jobs that are quietly costing you real attention.',
   },
   {
     icon: Users,
-    title: 'A few specialists',
-    body: 'Not one do-everything bot. A small set of focused helpers — replies, scheduling, billing follow-ups — each good at one job.',
+    title: 'Stand up digital helpers',
+    body: 'Each helper owns one clear job — inquiries, follow-ups, appointments, invoice nudges, routine updates. The loose ends get caught by design, so nothing goes quiet just because Tuesday got loud.',
   },
   {
     icon: PenLine,
-    title: 'Draft, then you approve',
-    body: 'Everything comes to you as a ready-to-send draft. You skim, tweak if needed, and approve. Nothing goes out on its own.',
+    title: 'They prepare. You decide.',
+    body: 'Drafts land in front of you. You tweak or approve. Nothing reaches a customer until you say so — which means more control over what goes out, not less. Your judgment goes on the decisions, not the typing and chasing.',
   },
   {
-    icon: LineChart,
-    title: 'A runbook you own',
-    body: 'We document how it all works and keep spend capped. You get a calmer week and a system you understand — not a black box.',
+    icon: BookOpen,
+    title: 'A playbook you can read',
+    body: 'Plain English: what’s running, when, and why, with caps on spend you set. You understand every piece of it — and you’re never locked into a mystery.',
   },
 ];
 
@@ -31,11 +31,12 @@ export default function HowItWorks() {
         <Reveal className="max-w-2xl">
           <span className="eyebrow">How it works</span>
           <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            A quiet system that keeps the week moving.
+            Helpers do the grunt work. You make the calls.
           </h2>
           <p className="mt-4 text-lg text-ink-muted">
-            No rip-and-replace. No big platform to learn. We wire up the boring, repetitive
-            parts of your operations and keep you in control of every send.
+            No new app to learn, nothing to migrate. We find where your week leaks time and
+            attention, set up digital helpers for exactly those jobs, and keep you as the final
+            word on every message that leaves the building.
           </p>
         </Reveal>
 
