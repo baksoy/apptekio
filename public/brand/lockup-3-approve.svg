@@ -1,0 +1,8 @@
+<svg width="248" height="72" viewBox="0 0 248 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="APPTEK logo  Approve">
+  <g transform="translate(8 8) scale(0.875)">
+    <rect width="64" height="64" rx="16" fill="#3064AC"/>
+    <path d="M18 33 L28 43" stroke="#FCFAF3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M28 43 L47 20" stroke="#E3A033" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <text x="80" y="47" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="30" font-weight="600" letter-spacing="-0.5" fill="#1B2A43">apptek<tspan fill="#E3A033">.</tspan></text>
+</svg>
