@@ -58,6 +58,32 @@ etc.) live in `src/index.css` under each `[data-theme]` block.
 `[data-theme='a']` / `[data-theme='b']` blocks in `src/index.css` (keep the
 `[data-theme='c']` block and its CTA overrides).
 
+## Logo & brand marks
+
+APPTEK ships an SVG wordmark + icon mark (no AI-robot cliché, no generic SaaS
+swoosh), tuned to the warmed Azure palette (soft royal-azure + honey-gold).
+Four concepts are provided so the mark can still be swapped:
+
+| # | Concept | Idea | Status |
+| --- | --- | --- | --- |
+| 1 | **Peak** | A steady ascent over a grounded amber line; also reads as an "A". | option |
+| 2 | **Archway** | One front door with a warm amber threshold (the core positioning); crossbar doubles as an "A". | **default** |
+| 3 | **Approve** | A check whose upstroke turns amber — the draft-then-approve "go". | option |
+| 4 | **Cadence** | Five rising strokes — a week handled, ending on a calm amber high. | option |
+
+- **Concept board:** open `public/brand/index.html` (served at `/brand/` in
+  dev/preview) to compare all four with 32px/16px favicon previews and on-navy
+  swatches.
+- **Assets:** `public/brand/mark-[1-4]-*.svg` (icon) and
+  `public/brand/lockup-[1-4]-*.svg` (horizontal lockup).
+- **Wired default:** Concept 2 (Archway). The header/footer logo is rendered by
+  `src/components/ui/Wordmark.tsx` using theme tokens (`moss` = primary,
+  `clay` = warm accent), so the mark tracks whichever palette is active. The
+  browser favicon is `public/favicon.svg` (matches the Archway mark).
+- **To swap the default:** point `Wordmark.tsx` at another concept's paths and
+  replace `public/favicon.svg` with the matching `mark-*.svg` (both use the same
+  64×64 geometry as the files in `public/brand/`).
+
 ## Local development
 
 ```bash
