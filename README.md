@@ -128,7 +128,10 @@ Run `npm run build` and upload the contents of `dist/`.
 ## Positioning & copy notes (read before editing copy)
 
 The copy is deliberate (current version: v3 "Fable polish" — full text in
-`docs/copy-v3-fable.md`). A few locked decisions:
+`docs/copy-v3-fable.md`). For angles *beyond* busywork — leads, quotes, getting
+paid, marketing, reviews — and a wedge → expand sequencing, see the strategic
+brief in `docs/positioning-angles-fable.md` (not site copy). A few locked
+decisions:
 
 - **"Digital helpers," not "AI" / "bots."** We lead with the *outcome* ("Get
   your busywork handled. Stay in control.") and the plain-English noun **digital
