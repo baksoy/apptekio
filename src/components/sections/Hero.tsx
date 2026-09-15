@@ -32,10 +32,10 @@ export default function Hero() {
 
             <Reveal delay={60}>
               <h1 className="mt-5 font-display text-[2.65rem] font-semibold leading-[1.03] tracking-tight text-ink sm:text-6xl lg:text-[4.1rem]">
-                Get your busywork handled
-                <br className="hidden sm:block" /> —{' '}
+                Get your busywork handled.
+                <br className="hidden sm:block" />{' '}
                 <span className="relative whitespace-nowrap text-moss-600">
-                  stay in control
+                  Stay in control
                   <svg
                     aria-hidden="true"
                     viewBox="0 0 320 24"
@@ -51,13 +51,14 @@ export default function Hero() {
                     />
                   </svg>
                 </span>
+                .
               </h1>
             </Reveal>
 
             <Reveal delay={120}>
               <p className="mt-7 max-w-xl text-lg leading-relaxed text-ink-muted">
-                APPTEK sets up digital helpers for the grind of running a small business —
-                customer replies drafted before you open the laptop, follow-ups that don&apos;t go
+                We set up digital helpers for the grind of running your business — customer
+                replies drafted before you open the laptop, follow-ups that don&apos;t go
                 quiet, a calendar that keeps moving, invoice nudges and reminders that land on
                 time. <span className="font-semibold text-ink">Every send waits for your OK.</span>{' '}
                 You get more say over what goes out, and your attention back for the calls only

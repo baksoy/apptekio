@@ -22,7 +22,7 @@ Digital helpers take the busywork of the week — so you stay on the decisions t
 ---
 
 ## Meta / SEO
-- **Title:** APPTEK — Hand off the busywork. Keep the final word.
+- **Title:** APPTEK — Get your busywork handled. Stay in control.
 - **Description:** Digital helpers draft your week's busywork — replies, follow-ups, scheduling, reminders, invoice nudges — and every send waits for your OK. More say over what matters, less time on the grind.
 
 ---
@@ -36,10 +36,10 @@ Header CTA: **Talk about my week**
 ## Hero
 **Eyebrow:** For business owners buried in the busywork of the week
 
-**Headline:** Get your busywork handled — **stay in control**
-*(highlight + underline swash on "stay in control"; Bera's approved edit, 2026-09-15)*
+**Headline:** Get your busywork handled. **Stay in control.**
+*(two sentences; highlight + underline swash on "Stay in control"; Bera's approved edit, 2026-09-15)*
 
-**Subhead:** APPTEK sets up digital helpers for the grind of running a small business — customer replies drafted before you open the laptop, follow-ups that don't go quiet, a calendar that keeps moving, invoice nudges and reminders that land on time. **Every send waits for your OK.** You get more say over what goes out, and your attention back for the calls only you can make.
+**Subhead:** We set up digital helpers for the grind of running your business — customer replies drafted before you open the laptop, follow-ups that don't go quiet, a calendar that keeps moving, invoice nudges and reminders that land on time. **Every send waits for your OK.** You get more say over what goes out, and your attention back for the calls only you can make.
 
 **Primary CTA:** Talk about my week
 **Secondary CTA:** Get a quote
