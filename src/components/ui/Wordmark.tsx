@@ -2,8 +2,8 @@ interface WordmarkProps {
   className?: string;
 }
 
-// APPTEK wordmark — "Archway" concept: an azure doorway (one front door) with a
-// warm amber threshold that also reads as an "A". Colors use theme tokens so the
+// APPTEK wordmark — "Peak" concept: an azure ascent over a grounded amber line
+// (steady, upward momentum; also reads as an "A"). Colors use theme tokens so the
 // logo tracks the active palette (azure + amber on the default warmed Theme C).
 export default function Wordmark({ className = '' }: WordmarkProps) {
   return (
@@ -14,7 +14,7 @@ export default function Wordmark({ className = '' }: WordmarkProps) {
       >
         <svg width="20" height="20" viewBox="0 0 64 64" fill="none">
           <path
-            d="M19 48 L19 33 A13 13 0 0 1 45 33 L45 48"
+            d="M17 42 L32 21 L47 42"
             className="stroke-paper-soft"
             strokeWidth="6"
             strokeLinecap="round"
@@ -22,7 +22,7 @@ export default function Wordmark({ className = '' }: WordmarkProps) {
             fill="none"
           />
           <path
-            d="M25 40 L39 40"
+            d="M22 48 L42 48"
             className="stroke-clay-300"
             strokeWidth="5"
             strokeLinecap="round"

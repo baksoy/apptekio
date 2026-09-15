@@ -91,7 +91,7 @@
       <p class="lede">
         Four marks for APPTEK — ops automation for small teams. Built on the warmed
         Azure palette (soft royal-azure + honey-gold on warm paper). No AI-robot
-        clichés, no generic SaaS swoosh. Concept 2 is wired as the site default.
+        clichés, no generic SaaS swoosh. Concept 1 is wired as the site default.
       </p>
 
       <div class="grid" id="grid"></div>
@@ -116,8 +116,8 @@
       const svg = (size, id) =>
         `<svg width="${size}" height="${size}" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="16" fill="${AZURE}"/>${marks[id]}</svg>`;
       const concepts = [
-        { id: 1, name: 'Peak', desc: 'A steady ascent over a grounded amber line — calm, upward momentum. Reads as an “A” apex; the most classic of the set.' },
-        { id: 2, name: 'Archway', desc: 'One front door with a warm amber threshold — the core positioning, made literal. The crossbar also reads as an “A”. Default.', default: true },
+        { id: 1, name: 'Peak', desc: 'A steady ascent over a grounded amber line — calm, upward momentum. Reads as an “A” apex; the most classic of the set. Default.', default: true },
+        { id: 2, name: 'Archway', desc: 'One front door with a warm amber threshold — the core positioning, made literal. The crossbar also reads as an “A”.' },
         { id: 3, name: 'Approve', desc: 'A checkmark whose upstroke turns amber — the draft-then-approve moment where you say “go”. Action-forward.' },
         { id: 4, name: 'Cadence', desc: 'Five rising strokes — a week handled, ending on a calm high in amber. Distinctive and rhythmic.' },
       ];
